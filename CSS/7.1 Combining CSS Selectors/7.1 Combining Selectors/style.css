@@ -1,0 +1,41 @@
+/* Write your code here: */
+
+/* Grouping selectors. We use a comma for that*/
+
+h1,h2{
+    color: blueviolet;
+}
+
+/* 
+first selector is the parent > second selector is the child
+Has to be the direct child only ( not the grand child, ..) 
+Only one level nested inside 
+*/
+
+.box>p{
+    color: firebrick; 
+}
+
+/*Descendant combination*/
+
+/* Using the child selector would not work here because li is not a direct child of the class box*/
+.box li{
+    color: blue;
+}
+
+
+/* 
+Chaining: Apply where all selectors are true. 
+Chainign is often used to be really really specific
+When chaining, always start witht the element ( h1, h2, p,...) then add on the class, id, ..
+No space in between 
+ */
+
+li.done{
+    color: seagreen;
+}
+
+/*Combining Combiners aka multiple combiners */
+ul p.done{
+    font-size: 0.5rem;
+}

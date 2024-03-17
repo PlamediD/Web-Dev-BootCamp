@@ -1,0 +1,66 @@
+/* ... (Previous styles remain unchanged) */
+
+.ontainer hero-container{
+    color: purple; 
+    
+}
+
+/* ... (Previous styles remain unchanged) */
+
+#hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    #hero {
+        height: 80vh;
+    }
+
+    .hero-container {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #hero {
+        height: 60vh;
+    }
+
+    .hero-container {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    .hero, .resume, .projects, .about-me, .contact-me {
+        padding: 10px;
+    }
+}
